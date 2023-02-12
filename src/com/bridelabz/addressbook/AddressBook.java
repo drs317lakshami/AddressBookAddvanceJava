@@ -1,6 +1,5 @@
 package com.bridelabz.addressbook;
 
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -108,5 +107,15 @@ public class AddressBook {
         }else {
             System.out.println("Not Found");
         }
+    }
+    public  void searchByCity() {
+        System.out.println("Enter city Name:");
+        String city = sc.next();
+        list.stream().filter(contacts -> contacts.getCity().equalsIgnoreCase(city)).forEach(contacts -> System.out.println(contacts));
+    }
+    public void searchByState() {
+        System.out.println("Enter State Name:");
+        String state = sc.next();
+        list.stream().filter(contacts -> contacts.getState().equalsIgnoreCase(state)).forEach(contacts -> System.out.println(contacts));
     }
 }
