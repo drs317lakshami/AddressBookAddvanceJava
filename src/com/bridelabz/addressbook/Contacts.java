@@ -1,3 +1,5 @@
+package com.bridelabz.addressbook;
+
 public class Contacts {
     private String firstname;
     private String lastname;
@@ -82,5 +84,6 @@ public class Contacts {
                 "Pin :" + Pin +','+
                 "PhoneNumber :" +PhoneNumber +','+
                 "Email :" + email;
+
     }
 }
